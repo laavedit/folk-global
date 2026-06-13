@@ -2,7 +2,7 @@
 
 /* ── Variables ── */
 :root {
-  --dark:       #58614c;
+  --dark:       #57604c;
   --dark-deep:  #464e3c;
   --dark-mid:   #68705a;
   --cream:      #e8e3d0;
@@ -123,9 +123,8 @@ ul   { list-style: none; }
    HERO (Homepage)
 ════════════════════════════════════════ */
 .hero {
-  position: relative; height: 100vh; min-height: 600px;
-  display: flex; align-items: flex-end; justify-content: center;
-  padding-bottom: 8%;
+  position: relative; height: 78vh; min-height: 500px;
+  display: flex; align-items: center; justify-content: center;
   overflow: hidden;
 }
 .hero .img-ph { position: absolute; inset: 0; z-index: 0; }
@@ -192,12 +191,12 @@ ul   { list-style: none; }
 ════════════════════════════════════════ */
 .home-team { padding: 5rem 0; }
 .home-team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-top: 3rem; }
-.home-team-card { text-align: center; }
-.team-photo-ph { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; border: 2px solid rgba(60,72,56,0.15); overflow: hidden; }
+.home-team-card { text-align: center; display: flex; flex-direction: column; }
+.team-photo-ph { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 1rem; border: 2px solid rgba(87,96,76,0.15); overflow: hidden; }
 .team-photo-ph .img-ph { width: 100%; height: 100%; }
 .home-team-card h3 { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.2rem; }
 .team-role { font-size: 0.78rem; color: var(--dark); font-weight: 400; margin-bottom: 1rem; text-transform: none; letter-spacing: 0; }
-.team-bio { font-size: 0.83rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 1.25rem; text-align: left; }
+.team-bio { font-size: 0.83rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 1.25rem; text-align: left; flex: 1; }
 
 /* ════════════════════════════════════════
    ABOUT PAGE
@@ -467,10 +466,11 @@ a.read-more:hover { opacity: 0.7; }
 ════════════════════════════════════════ */
 .footer { background: var(--dark-deep); padding: 4rem 2.5rem 2rem; color: rgba(255,255,255,0.65); }
 .footer-inner { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: 200px 1fr 1.4fr 1fr; gap: 3rem; align-items: start; }
-.footer-brand .logo-sm { display: flex; align-items: center; gap: 10px; margin-bottom: 1.5rem; }
+.footer-brand .logo-sm { margin-bottom: 1.5rem; }
 .footer-brand .logo-text-sm .folk-name { font-family: var(--serif); color: var(--white); font-size: 1.1rem; }
 .footer-brand .logo-text-sm .folk-sub  { font-size: 0.48rem; color: rgba(255,255,255,0.45); letter-spacing: 1.5px; text-transform: uppercase; }
 .footer-brand .copy { font-size: 0.75rem; color: rgba(255,255,255,0.4); }
+.logo-img-sm { height: 38px; width: auto; display: block; }
 .footer-col h4 { font-family: var(--sans); font-size: 0.85rem; font-weight: 700; color: var(--white); margin-bottom: 1.25rem; letter-spacing: 0.5px; }
 .footer-col ul li { margin-bottom: 0.6rem; }
 .footer-col ul a { font-size: 0.85rem; color: rgba(255,255,255,0.55); transition: color var(--ease); }
