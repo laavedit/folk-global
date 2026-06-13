@@ -1,236 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Our Team — FOLK</title>
-  <meta name="description" content="Meet the founders, directors, associate fellows, and project team behind FOLK's work in heritage and disaster resilience." />
+  <meta name="description" content="Meet the founders, directors, and associates of FOLK — Foundation For Living Knowledge." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
-  <style>
-    .team-bio-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      display: grid;
-      grid-template-columns: 160px 1fr;
-      gap: 2rem;
-      padding: 2rem;
-      transition: transform var(--transition);
-      margin-bottom: 1.5rem;
-    }
-    .team-bio-card:hover { transform: translateY(-3px); }
-    .team-bio-left { text-align: center; }
-    .team-bio-avatar {
-      width: 110px; height: 110px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      margin: 0 auto 0.75rem;
-      display: flex; align-items: center; justify-content: center;
-      color: var(--white); font-size: 2.2rem; font-family: Georgia, serif; font-weight: bold;
-    }
-    .team-bio-left .role { color: var(--secondary); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; font-family: sans-serif; }
-    .team-bio-right h3 { color: var(--dark); font-size: 1.25rem; margin-bottom: 0.5rem; }
-    .team-bio-right p { color: var(--text-light); font-size: 0.93rem; margin-bottom: 0.6rem; line-height: 1.65; }
-    .edu-tag { display: inline-block; background: var(--bg-alt); color: var(--primary); font-size: 0.75rem; padding: 3px 10px; border-radius: 4px; margin: 2px; }
-    @media (max-width: 600px) {
-      .team-bio-card { grid-template-columns: 1fr; text-align: center; }
-    }
-  </style>
 </head>
 <body>
 
-  <nav class="navbar">
-    <a href="index.html" class="logo">
-      <span class="folk">FOLK</span>
-      <span>Foundation For Living Knowledge<span class="logo-sub">Disaster Risk · Heritage · Indigenous Knowledge</span></span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="our-work.html">Our Work</a></li>
-      <li><a href="our-team.html" class="active">Our Team</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="navbar">
+  <a href="index.html" class="logo"><svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="19" r="17.5" stroke="white" stroke-width="1.2"/><line x1="19" y1="33" x2="19" y2="17" stroke="white" stroke-width="1.4" stroke-linecap="round"/><line x1="19" y1="24" x2="12" y2="18" stroke="white" stroke-width="1.2" stroke-linecap="round"/><line x1="19" y1="24" x2="26" y2="18" stroke="white" stroke-width="1.2" stroke-linecap="round"/><circle cx="19" cy="9.5" r="1.8" stroke="white" stroke-width="0.9"/></svg><div class="logo-text"><span class="folk-name">FOLK</span><span class="folk-sub">Foundation For Living Knowledge</span></div></a>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="our-work.html">Our Work</a></li><li><a href="our-team.html" class="active">Our Team</a></li><li><a href="get-involved.html">Get Involved</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="blog.html">Blog</a></li></ul>
+</nav>
 
-  <div class="page-hero">
-    <h1>Our Team</h1>
-    <p>A diverse group of academics, practitioners, and community workers united by a commitment to living knowledge.</p>
+<!-- TEAM HERO (cream) -->
+<section class="team-hero">
+  <!-- Hands/dove icon -->
+  <svg class="folk-icon-lg" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:1.5rem">
+    <circle cx="35" cy="35" r="33.5" stroke="#3c4838" stroke-width="1.2"/>
+    <path d="M22 42 C18 38 16 32 18 27 C20 22 25 20 28 23 C29 24 29 26 30 28 C32 25 34 22 37 22 C41 21 44 25 43 29 C42 31 40 33 38 35 L35 48 Z" stroke="#3c4838" stroke-width="1.3" fill="none"/>
+    <path d="M30 28 C30 28 27 34 28 40" stroke="#3c4838" stroke-width="1" fill="none" stroke-linecap="round" stroke-dasharray="2 2"/>
+    <path d="M23 30 C20 27 20 23 23 22" stroke="#3c4838" stroke-width="0.9" fill="none" stroke-linecap="round"/>
+  </svg>
+  <h1>Meet Our Team</h1>
+  <div class="title-deco" style="color:var(--text-dark);margin:0.5rem auto">
+    <svg width="60" height="16" viewBox="0 0 60 16" fill="none"><path d="M0 8 C10 1 10 15 20 8 C30 1 30 15 40 8 C50 1 50 15 60 8" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
   </div>
+  <p class="team-tagline">Dedication | Expertise | Passion</p>
+  <p>Our team is woven from diverse fields and expertise, each thread contributing its unique hue to our collective vision of FOLK. We converge with a shared passion of conserving indigenous knowledge systems for a greater purpose.</p>
+</section>
 
-  <!-- Founders -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Leadership</span>
-        <h2>Founders &amp; Directors</h2>
-        <div class="divider"></div>
+<!-- FOUNDERS (dark) -->
+<section class="bg-dark" style="padding:5rem 2rem">
+  <div style="max-width:1080px;margin:0 auto">
+    <h2 class="section-title light" style="font-size:1.8rem;margin-bottom:0.3rem">Our Founders and Directors</h2>
+    <div class="title-deco" style="color:white;margin-bottom:2.5rem">
+      <svg width="60" height="16" viewBox="0 0 60 16" fill="none"><path d="M0 8 C10 1 10 15 20 8 C30 1 30 15 40 8 C50 1 50 15 60 8" stroke="white" stroke-width="1.2" fill="none"/></svg>
+    </div>
+
+    <div class="founders-grid">
+      <!-- Madhusudan -->
+      <div class="founder-card">
+        <div class="founder-header">
+          <div class="founder-photo-ph"><div class="img-ph" data-img="Madhusudan Singh"></div></div>
+          <div>
+            <h3>Madhusudan Singh</h3>
+            <span class="role">Co-Founder and Director</span>
+          </div>
+        </div>
+        <p>Madhusudan is an experienced Climate Change Adaptation &amp; Disaster Risk Reduction professional having years of global research and field experience with prestigious international organizations like the European Commission, Faculty of Engineering, University of Porto (FEUP), United Nations Development Program (UNDP), National Disaster Response Force (NDRF) India and Global Heritage Fund, USA among others.</p>
+        <p>He holds an M.Sc. degree in Disaster Management from the Tata Institute of Social Sciences (TISS), India.</p>
+        <a href="#" class="read-more light">Read more</a>
       </div>
-
-      <div class="team-bio-card">
-        <div class="team-bio-left">
-          <div class="team-bio-avatar">MS</div>
-          <div class="role">Co-Founder &amp; Director</div>
+      <!-- Abhishek -->
+      <div class="founder-card">
+        <div class="founder-header">
+          <div class="founder-photo-ph"><div class="img-ph" data-img="Abhishek Kumar"></div></div>
+          <div>
+            <h3>Abhishek Kumar</h3>
+            <span class="role">Director</span>
+          </div>
         </div>
-        <div class="team-bio-right">
-          <h3>Madhusudan Singh</h3>
-          <p>A climate change and disaster risk reduction professional with deep field experience across Nepal, Odisha, and Kerala. Madhusudan has worked on climate adaptation, emergency response, and community resilience at the intersection of policy and practice.</p>
-          <p>He participated in the Smithsonian Institution's Faculty and Curatorial Program (FAC) and has collaborated with national and international bodies including NDRF India, UNDP, and the European Commission.</p>
-          <span class="edu-tag">M.Sc. Disaster Management — TISS</span>
-          <span class="edu-tag">UNDP India</span>
-          <span class="edu-tag">European Commission</span>
-          <span class="edu-tag">NDRF India</span>
-          <span class="edu-tag">Smithsonian Institution (FAC)</span>
-        </div>
-      </div>
-
-      <div class="team-bio-card">
-        <div class="team-bio-left">
-          <div class="team-bio-avatar">MM</div>
-          <div class="role">Co-Founder &amp; Executive Director</div>
-        </div>
-        <div class="team-bio-right">
-          <h3>Mohini Mehta</h3>
-          <p>A doctoral scholar in Sociology at Uppsala University, Mohini brings an interdisciplinary lens to FOLK's work, drawing on postcolonial feminism, identity politics, and food studies. Her MA degrees from Central European University (Hungary) and TISS (India) anchor her comparative South Asian perspective.</p>
-          <p>Beyond her academic work, Mohini is a spoken word poet and professional storyteller — skills she uses to communicate indigenous narratives to wider audiences.</p>
-          <span class="edu-tag">PhD Sociology — Uppsala University</span>
-          <span class="edu-tag">MA — CEU Hungary</span>
-          <span class="edu-tag">MA — TISS India</span>
-        </div>
-      </div>
-
-      <div class="team-bio-card">
-        <div class="team-bio-left">
-          <div class="team-bio-avatar">AK</div>
-          <div class="role">Director</div>
-        </div>
-        <div class="team-bio-right">
-          <h3>Abhishek Kumar</h3>
-          <p>A development professional specialising in ecosystem-based adaptation and climate resilience, Abhishek works at the frontline of Himalayan conservation. His expertise lies in integrating traditional ecological knowledge with modern scientific approaches to help communities adapt to environmental change.</p>
-          <p>He brings practical experience from across Himalayan communities and a rigorous academic grounding in disaster management from one of India's premier technical institutions.</p>
-          <span class="edu-tag">M.Sc. Disaster Management — IIT Roorkee</span>
-          <span class="edu-tag">Ecosystem-based Adaptation</span>
-          <span class="edu-tag">Climate Resilience</span>
-        </div>
+        <p>Abhishek Kumar is a development professional with a Master's degree in Disaster Management from the Indian Institute of Technology (IIT) Roorkee. With extensive experience working across the Himalayan region, he has been deeply involved in conservation-centric projects, ecosystem-based adaptation, and community-led climate resilience strategies.</p>
+        <p>His work focuses on integrating traditional ecological knowledge with modern science to build sustainable, adaptive livelihood models for vulnerable mountain communities.</p>
+        <a href="#" class="read-more light">Read more</a>
       </div>
     </div>
-  </section>
 
-  <!-- Associate Folks -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Network</span>
-        <h2>Associate Folks</h2>
-        <div class="divider"></div>
-        <p>Our associate network brings specialised expertise from archaeology to engineering to clinical psychology.</p>
-      </div>
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="team-avatar">KP</div>
-          <h3>Krishnapriya Panicker</h3>
-          <div class="role">Associate Folk</div>
-          <p>Archaeologist and heritage professional. Field experience at the Rakhigarhi Excavation Project and with INTACH and National Monuments Authority.</p>
+    <!-- Mohini — centered single card -->
+    <div class="founder-single">
+      <div class="founder-card">
+        <div class="founder-header">
+          <div class="founder-photo-ph"><div class="img-ph" data-img="Mohini Mehta"></div></div>
+          <div>
+            <h3>Mohini Mehta</h3>
+            <span class="role">Co-Founder and Executive Director</span>
+          </div>
         </div>
-        <div class="team-card">
-          <div class="team-avatar">SS</div>
-          <h3>Shubham Srivastava</h3>
-          <div class="role">Associate Folk</div>
-          <p>M.Sc. Disaster Management (TISS). Expert in climate change, gender, and disaster response. Worked with JICA and British High Commission.</p>
-        </div>
-        <div class="team-card">
-          <div class="team-avatar">AH</div>
-          <h3>Alireza Hosseini</h3>
-          <div class="role">Associate Folk</div>
-          <p>Civil engineer from Iran with a Master's in Earthquake Engineering. PhD focused on sustainable construction and reducing concrete waste in building systems.</p>
-        </div>
-        <div class="team-card">
-          <div class="team-avatar">MS</div>
-          <h3>Mridula Sharma</h3>
-          <div class="role">Associate Folk</div>
-          <p>Licensed clinical psychologist from Himachal Pradesh. M.Phil. in Clinical Psychology. Expert in psychosocial first aid and mental health support during crises.</p>
-        </div>
-        <div class="team-card">
-          <div class="team-avatar">PP</div>
-          <h3>Dr. Priyanka Pandit</h3>
-          <div class="role">Associate Folk</div>
-          <p>Deputy Director, Dept. of Health &amp; Family Welfare, Government of Himachal Pradesh. Master's in Health Administration (TISS). Focuses on universal health coverage.</p>
-        </div>
-        <div class="team-card">
-          <div class="team-avatar">KY</div>
-          <h3>Kranti Yadav</h3>
-          <div class="role">Associate Folk</div>
-          <p>MA Social Work (TISS Mumbai). Dedicated to grassroots community work and child rights. Currently with Kailash Satyarthi Children's Foundation.</p>
-        </div>
+        <p>Mohini (she/her) is a doctoral scholar in Sociology at Uppsala University, Sweden. She holds an MA degree in Social Anthropology from Central European University (CEU), Hungary, and an MA in Social work from Tata Institute of Social Sciences (TISS), India. She finished her undergraduate degree in History from St. Stephen's College, Delhi.</p>
+        <p>Her academic work lies at the intersection of postcolonial feminism, identity politics, and food studies.</p>
+        <a href="#" class="read-more light">Read more</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Project Team -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Project Team</span>
-        <h2>In the Field</h2>
-        <div class="divider"></div>
+<!-- ASSOCIATE FOLKS (dark, slightly different shade) -->
+<section class="bg-dark" style="padding:5rem 2rem;background:#313e2b">
+  <div style="max-width:1080px;margin:0 auto">
+    <h2 class="section-title light" style="font-size:1.8rem;margin-bottom:0.3rem">Associate Folks</h2>
+    <div class="title-deco" style="color:white;margin-bottom:2.5rem">
+      <svg width="60" height="16" viewBox="0 0 60 16" fill="none"><path d="M0 8 C10 1 10 15 20 8 C30 1 30 15 40 8 C50 1 50 15 60 8" stroke="white" stroke-width="1.2" fill="none"/></svg>
+    </div>
+    <div class="assoc-grid">
+      <div class="assoc-card">
+        <div class="assoc-header"><div class="assoc-photo-ph"><div class="img-ph" data-img="Krishnapriya Panicker"></div></div><div><h3>Krishnapriya Panicker</h3><span class="role">Associate Folk</span></div></div>
+        <p>Krishnapriya is an experienced Archaeologist and a Heritage professional with a master's degree in Archaeology from Deccan Postgraduate and Research Institute and M.M.S. (Master's in management studies) in Heritage Management from Centre for Heritage Management (ICH...<br><a href="#" class="read-more light" style="margin-top:0.5rem;display:inline-block">Read more</a></p>
       </div>
-      <div class="team-grid">
-        <div class="team-card">
-          <div class="team-avatar">SB</div>
-          <h3>Sanchita Biswas</h3>
-          <div class="role">Project Associate</div>
-          <p>Master's in Disaster Management (Punjab University). Expert in Odissi classical dance with 14 years of experience. Focuses on the social dimensions of disasters and community resilience.</p>
-        </div>
-        <div class="team-card">
-          <div class="team-avatar">LW</div>
-          <h3>Lalita Waldia</h3>
-          <div class="role">Program Officer</div>
-          <p>Bachelor's in Architecture and Master's in Development Studies (IIT Mandi). Specialises in Himalayan crafts, traditional knowledge, and forest rights. Published researcher on regional heritage.</p>
-        </div>
-        <div class="team-card">
-          <div class="team-avatar">SK</div>
-          <h3>Samanata Kumar</h3>
-          <div class="role">Intern</div>
-          <p>Pursuing Master's in Heritage Management (Ahmedabad University). Background in interior design with experience in heritage preservation, disaster risk assessment, and school safety training.</p>
-        </div>
+      <div class="assoc-card">
+        <div class="assoc-header"><div class="assoc-photo-ph"><div class="img-ph" data-img="Shubham Srivastava"></div></div><div><h3>Shubham Srivastava</h3><span class="role">Associate Folk</span></div></div>
+        <p>Shubham brings in rich and diverse experience of development sector with reputed multi-lateral organization such as Japan International Cooperation Agency (JICA), British High Commission, People in Need etc. He holds an M.Sc. degree in Disaster Management from T...<br><a href="#" class="read-more light" style="margin-top:0.5rem;display:inline-block">Read more</a></p>
+      </div>
+      <div class="assoc-card">
+        <div class="assoc-header"><div class="assoc-photo-ph"><div class="img-ph" data-img="Alireza Hosseini"></div></div><div><h3>Alireza Hosseini</h3><span class="role">Associate Folk</span></div></div>
+        <p>Alireza graduated with a Bachelor of Civil Engineering in Iran. He completed his master's degree in Earthquake Engineering from Sharif University of Technology, Iran, focusing on base isolation systems. Later, he followed his research on structural design at Porto University in Portugal...<br><a href="#" class="read-more light" style="margin-top:0.5rem;display:inline-block">Read more</a></p>
+      </div>
+      <div class="assoc-card">
+        <div class="assoc-header"><div class="assoc-photo-ph"><div class="img-ph" data-img="Mridula Sharma"></div></div><div><h3>Mridula Sharma</h3><span class="role">Associate Folk</span></div></div>
+        <p>Mridula is a licensed clinical psychologist and hails from Himachal Pradesh. Her educational background includes M.Phil. in Clinical Psychology, and MA in Psychology (Majoring in Clinical Psychology, Counseling and Organizational Psychology). She is expert in psychosocial first...<br><a href="#" class="read-more light" style="margin-top:0.5rem;display:inline-block">Read more</a></p>
+      </div>
+      <div class="assoc-card">
+        <div class="assoc-header"><div class="assoc-photo-ph"><div class="img-ph" data-img="Dr. Priyanka Pandit"></div></div><div><h3>Dr. Priyanka Pandit</h3><span class="role">Associate Folk</span></div></div>
+        <p>Dr. Priyanka Pandit, a Deputy Director in the Department of Health and Family Welfare, Government of Himachal Pradesh. She has from culturally rich land of Kashmir. She has played a significant role in implementing various Health schemes initiated by both the Center and St...<br><a href="#" class="read-more light" style="margin-top:0.5rem;display:inline-block">Read more</a></p>
+      </div>
+      <div class="assoc-card">
+        <div class="assoc-header"><div class="assoc-photo-ph"><div class="img-ph" data-img="Kranti Yadav"></div></div><div><h3>Kranti Yadav</h3><span class="role">Associate Folk</span></div></div>
+        <p>Kranti Yadav graduated from Lady Shri College for Women and pursued her MA in Social Work at Tata Institute of Social Sciences, Mumbai. She has been dedicated towards working with grassroots communities with, particularly focusing on child rights. She has worked in rural areas of Ut...<br><a href="#" class="read-more light" style="margin-top:0.5rem;display:inline-block">Read more</a></p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Join CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Join Our Team</h2>
-      <p>We are always looking for passionate researchers, practitioners, and community workers to join FOLK as interns, volunteers, or associates.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
-        <a href="get-involved.html" class="btn btn-outline" style="border-color:white;color:white">Get Involved</a>
-        <a href="contact.html" class="btn" style="background:white;color:var(--accent)">Contact Us</a>
+<!-- OUR TEAM (project team) -->
+<section class="bg-dark" style="padding:5rem 2rem">
+  <div style="max-width:1080px;margin:0 auto">
+    <h2 class="section-title light" style="font-size:1.8rem;margin-bottom:0.3rem">Our Team</h2>
+    <div class="title-deco" style="color:white;margin-bottom:2.5rem">
+      <svg width="60" height="16" viewBox="0 0 60 16" fill="none"><path d="M0 8 C10 1 10 15 20 8 C30 1 30 15 40 8 C50 1 50 15 60 8" stroke="white" stroke-width="1.2" fill="none"/></svg>
+    </div>
+    <div class="assoc-grid">
+      <div class="assoc-card">
+        <div class="assoc-header"><div class="assoc-photo-ph"><div class="img-ph" data-img="Sanchita Biswas"></div></div><div><h3>Sanchita Biswas</h3><span class="role">Project Associate</span></div></div>
+        <p>A native of Kolkata, West Bengal and born and brought up in Delhi, Sanchita has a nuanced and multifaceted understanding of the discipline of Geography. She received her undergraduate degree in Geography from Kamala Nehru College for Women at the University of Del...<br><a href="#" class="read-more light" style="margin-top:0.5rem;display:inline-block">Read more</a></p>
+      </div>
+      <div class="assoc-card">
+        <div class="assoc-header"><div class="assoc-photo-ph"><div class="img-ph" data-img="Lalita Waldia"></div></div><div><h3>Lalita Waldia</h3><span class="role">Program Officer</span></div></div>
+        <p>Lalita Waldia, originally from the picturesque region of Uttarakhand, boasts a distinguished educational background, having obtained a Bachelor's degree in Architecture from DIT University and a Master's degree in Development Studies from the prestigious IIT...<br><a href="#" class="read-more light" style="margin-top:0.5rem;display:inline-block">Read more</a></p>
+      </div>
+      <div class="assoc-card">
+        <div class="assoc-header"><div class="assoc-photo-ph"><div class="img-ph" data-img="Samanata Kumar"></div></div><div><h3>Samanata Kumar</h3><span class="role">Intern</span></div></div>
+        <p>Samanata Kumar, an emerging professional in design and documentation, bridges the gap between vernacular architecture, cultural heritage, and captivating storytelling. Driven by a passion for heritage preservation, she is pursuing a Master's in Management Studies...<br><a href="#" class="read-more light" style="margin-top:0.5rem;display:inline-block">Read more</a></p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <span class="logo"><span class="folk" style="color:var(--secondary)">FOLK</span></span>
-        <p>Foundation For Living Knowledge — preserving indigenous knowledge, cultural heritage, and climate resilience.</p>
-        <div class="footer-social">
-          <a href="https://api.whatsapp.com/message/43WELYTEPMSCD1" title="WhatsApp">💬</a>
-          <a href="https://www.instagram.com/folk.organization" title="Instagram">📷</a>
-          <a href="https://www.facebook.com/folk.organization" title="Facebook">📘</a>
-          <a href="https://www.linkedin.com/company/82987163" title="LinkedIn">💼</a>
-        </div>
-      </div>
-      <div><h4>Navigate</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="our-work.html">Our Work</a></li><li><a href="our-team.html">Our Team</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h4>Focus Areas</h4><ul><li><a href="our-work.html">Heritage Conservation</a></li><li><a href="our-work.html">Disaster Response</a></li><li><a href="our-work.html">Indigenous Knowledge</a></li><li><a href="our-work.html">School Safety</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li><a href="mailto:dia@hotmail.com">dia@hotmail.com</a></li><li><a href="tel:+919867633388">+91-9867633388</a></li><li><a href="contact.html">New Delhi Office</a></li><li><a href="contact.html">Kullu HP Office</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><p>© 2024 Foundation For Living Knowledge (FOLK). All rights reserved.</p></div>
-  </footer>
-
-  <script src="js/main.js"></script>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><div class="logo-sm"><svg width="30" height="30" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="19" r="17.5" stroke="white" stroke-width="1.2"/><line x1="19" y1="33" x2="19" y2="17" stroke="white" stroke-width="1.4" stroke-linecap="round"/><circle cx="19" cy="9.5" r="1.8" stroke="white" stroke-width="0.9"/></svg><div class="logo-text-sm"><span class="folk-name">FOLK</span><span class="folk-sub">Foundation For Living Knowledge</span></div></div><p class="copy">© 2024 by FOLK</p></div>
+    <div class="footer-col"><h4>Menu</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="our-work.html">Our Work</a></li><li><a href="our-team.html">Our Team</a></li><li><a href="get-involved.html">Get Involved</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="blog.html">Blogs</a></li></ul></div>
+    <div class="footer-col"><h4>Contact Us</h4><address>Reg. Office: F-89, Upper Ground Floor, Vishnu Garden, West, Delhi, New Delhi, Delhi, India, 110018<br><br>Operation Office: Gandhinagar, Kullu, Himachal Pradesh<br><br><a href="mailto:folk.india@hotmail.com">folk.india@hotmail.com</a><br><a href="tel:+919867633388">+91-9867633388</a></address></div>
+    <div class="footer-col"><h4>Stay Tuned</h4><div class="social-round"><a href="https://api.whatsapp.com/message/43WELYTEPMSCD1" title="WhatsApp" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a><a href="https://www.instagram.com/folk.organization" title="Instagram" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/></svg></a><a href="https://www.linkedin.com/company/82987163" title="LinkedIn" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a><a href="https://www.facebook.com/folk.organization" title="Facebook" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a></div></div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
