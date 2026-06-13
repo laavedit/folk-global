@@ -1,8 +1,16 @@
 // Mobile nav
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks  = document.querySelector('.nav-links');
-if (navToggle) navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => navLinks?.classList.remove('open')));
+if (navToggle) navToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  navToggle.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+});
+document.querySelectorAll('.nav-links a').forEach(l => l.addEventListener('click', () => {
+  navLinks?.classList.remove('open');
+  navToggle?.classList.remove('open');
+  navToggle?.setAttribute('aria-expanded', 'false');
+}));
 
 // Active link
 const page = window.location.pathname.split('/').pop() || 'index.html';
@@ -52,6 +60,20 @@ document.querySelectorAll('form.form-minimal').forEach(form => {
     btn.textContent = '✓ Sent!';
     btn.disabled = true;
     setTimeout(() => { btn.textContent = orig; btn.disabled = false; form.reset(); }, 3500);
+  });
+});
+
+// Accordion (Read More / Read Less)
+document.querySelectorAll('.accordion-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const body = btn.previousElementSibling;
+    if (!body?.classList.contains('accordion-body')) return;
+    const isOpen = body.classList.contains('open');
+    body.classList.toggle('open', !isOpen);
+    btn.classList.toggle('open', !isOpen);
+    btn.setAttribute('aria-expanded', String(!isOpen));
+    const textNode = [...btn.childNodes].find(n => n.nodeType === Node.TEXT_NODE);
+    if (textNode) textNode.textContent = isOpen ? 'Read more ' : 'Read less ';
   });
 });
 
