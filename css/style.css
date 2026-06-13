@@ -2,9 +2,9 @@
 
 /* ── Variables ── */
 :root {
-  --dark:       #3c4838;
-  --dark-deep:  #2b3526;
-  --dark-mid:   #4a5a40;
+  --dark:       #58614c;
+  --dark-deep:  #464e3c;
+  --dark-mid:   #68705a;
   --cream:      #e8e3d0;
   --cream-light:#f0ece0;
   --white:      #ffffff;
@@ -16,7 +16,8 @@
   --text-cream-hero:rgba(255,255,255,0.88);
   --text-cream-dim: rgba(255,255,255,0.78);
   --text-cream-mid: rgba(255,255,255,0.75);
-  --dark-grove:  #313e2b;
+  --dark-grove:  #4d5542;
+  --leaf-green:  #78a258;
   --btn:         #1e1e1e;
   --nav-h:      65px;
   --serif:      'Playfair Display', Georgia, serif;
